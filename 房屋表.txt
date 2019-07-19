@@ -1,0 +1,33 @@
+CREATE TABLE public.INFO_HOUSE(
+ID smallint PRIMARY KEY NOT NULL,
+name character varying[256] NOT NULL,
+price smallint NOT NULL,
+scale float8 NOT NULL,
+community smallint NOT NULL,
+direct character varying[64] NOT NULL,
+floor smallint NOT NULL,
+style smallint NOT NULL,
+level_xiu character varying[64] NOT NULL,
+remark text,
+state_sale smallint NOT NULL,
+picture character varying[128],
+traffic smallint NOT NULL,
+parking smallint NOT NULL
+);
+--表说明
+COMMENT ON TABLE public.INFO_HOUSE IS '房屋信息表';
+--字段说明
+COMMENT ON COLUMN public.INFO_HOUSE.ID IS '主键ID';
+COMMENT ON COLUMN public.INFO_HOUSE.name IS '房屋姓名';
+COMMENT ON COLUMN public.INFO_HOUSE.price IS '单价';
+COMMENT ON COLUMN public.INFO_HOUSE.scale IS '面积';
+COMMENT ON COLUMN public.INFO_HOUSE.community IS '所属小区';
+COMMENT ON COLUMN public.INFO_HOUSE.direct IS '朝向';
+COMMENT ON COLUMN public.INFO_HOUSE.floor IS '楼层';
+COMMENT ON COLUMN public.INFO_HOUSE.style IS '格局';
+COMMENT ON COLUMN public.INFO_HOUSE.level_xiu IS '装修等级';
+COMMENT ON COLUMN public.INFO_HOUSE.remark IS '备注';
+COMMENT ON COLUMN public.INFO_HOUSE.state_sale IS '销售状态';
+COMMENT ON COLUMN public.INFO_HOUSE.picture IS '图片';
+COMMENT ON COLUMN public.INFO_HOUSE.traffic IS '交通';
+COMMENT ON COLUMN public.INFO_HOUSE.parking IS '停车场';
